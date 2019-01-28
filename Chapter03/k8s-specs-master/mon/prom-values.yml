@@ -1,0 +1,42 @@
+server:
+  ingress:
+    enabled: true
+  resources:
+    limits:
+      cpu: 400m
+      memory: 200Mi
+    requests:
+      cpu: 200m
+      memory: 130Mi
+pushgateway:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 50Mi
+    requests:
+      cpu: 50m
+      memory: 20Mi
+nodeExporter:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 50Mi
+    requests:
+      cpu: 50m
+      memory: 20Mi
+kubeStateMetrics:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 50Mi
+    requests:
+      cpu: 50m
+      memory: 20Mi
+alertmanager:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 50Mi
+    requests:
+      cpu: 50m
+      memory: 20Mi
